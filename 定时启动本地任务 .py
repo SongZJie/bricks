@@ -6,7 +6,7 @@ import pymysql
 def sth():
         
 
-	os.system("F:\各种脚本\hello.py")
+	os.system("F:\各种脚本\hello.py")  #文件名是纯数字时候会出现错误
 
 def main(h=23, m=43):
 
