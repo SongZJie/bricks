@@ -1,5 +1,8 @@
 import os
 def sth():
+    path = input("<<<")
+   
 
-	os.system("E:\新建文本文档.py")
-sth ()
+    os.system("\"%s\"" % path)
+
+sth()
