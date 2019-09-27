@@ -1,0 +1,18 @@
+import pandas as pd
+
+#这三行是为了可以在jupyter中显示中文
+import matplotlib.pyplot as plt
+plt.rcParams['font.sans-serif']=['SimHei'] #用来正常显示中文标签
+plt.rcParams['axes.unicode_minus']=False
+
+#读取数据
+data=pd.read_csv("E:/a1.csv")
+
+#改变列索引中的某一个
+data_c=data.rename(columns={'z':'党川1'})
+
+#画图
+ax=data_c.plot(x="x",y="党川1")
+#保存图
+fig=ax.get_figure()
+fig.savefig(r'E:\cc.png')
