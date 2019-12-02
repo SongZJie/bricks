@@ -95,7 +95,7 @@ plt.show()
 np.random.seed(19680801)
 data = [sorted(np.random.normal(0, std, 4)) for std in range(1, 2)]   #sorted 排序,    data是个列表 可看成4x10
 print(data)
-
+#要注意的问题是，输入的数据是[[4,5,6,1,3,4,4,5,][4,5,5,9,4,2,5,8,]] 这种列表类型的，官方示例是生成两个图，本次只用一个图，所以更改了只生成一个图。
 
 
 
